@@ -79,7 +79,7 @@ class Tools:
 
                 ineligible_coverage_list = ineligible_coverage.get_file_path_with_wildcard_from_gdb(ineligible_coverage_wildcard)
 
-                if len(ineligible_coverage_list) == 0:
+                if len(ineligible_coverage_list) == 0 and len(LTE_list)!=0:
                     filename = path.basename(LTE_list[0])
                     print("\nExporting this {} to out GDB".format(filename))
 
@@ -150,6 +150,7 @@ class Tools:
                             print(msgs)
 
 
-
+                elif len(LTE_list)==0 and len(ineligible_coverage_list)==0:
+                    print("cannot find, {}; []".format(LTE_coverage_wildcard, ineligible_coverage_wildcard))
 
 

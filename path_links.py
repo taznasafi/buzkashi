@@ -7,7 +7,9 @@ from os import path
 
 input_csv_base = r"/process/mfii/murtaza/MFII/Creating_subsidy_area/input/CSV"
 
-input_bdb_base = r"/process/mfii/murtaza/MFII/Creating_subsidy_area/input/GDBs"
+input_bdb_base_mfii = r"/process/mfii/murtaza/MFII/Creating_subsidy_area/input/GDBs/MFII"
+input_bdb_base_June2017 = r"/process/mfii/murtaza/MFII/Creating_subsidy_area/input/GDBs/June2017"
+input_bdb_base_Dec2016 = r"/process/mfii/murtaza/MFII/Creating_subsidy_area/input/GDBs/Dec2016"
 
 ineligible_gdb = "_dissovled_ineligible_coverages.gdb"
 

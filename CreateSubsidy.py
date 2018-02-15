@@ -47,6 +47,8 @@ class Tools:
 
     def erase_ineligible_from_coverage(self, LTE_env, ineligible_env):
 
+        arcpy.env.parallelProcessingFactor = "40%"
+
         state_list = get_path.pathFinder.make_fips_list()
 
         for state in state_list:

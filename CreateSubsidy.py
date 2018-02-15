@@ -56,7 +56,7 @@ class Tools:
 
 
 
-            LTE5CoverageList = get_path.pathFinder.query_provider_by_FIPS(path.join(path_links.input_bdb_base,
+            LTE5CoverageList = get_path.pathFinder.query_provider_by_FIPS(path.join(path_links.input_csv_base,
                                                                                        path_links.LTE5_table_path),
                                                                           str(int(state)))
             print("\n\n\t\t\t\t\tState fips: {}".format(state))

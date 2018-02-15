@@ -60,11 +60,12 @@ class Tools:
                                                                                        path_links.LTE5_table_path),
                                                                           str(int(state)))
 
+
             for pid in LTE5CoverageList:
 
                 LTE_coverage_wildcard = "T{}_{}".format(str(int(state)), str(pid))
-                print("The wild card for coverage is: {}".format(LTE5CoverageList), flush=True)
-                logging.info("The wild card for coverage is: {}".format(LTE5CoverageList))
+                print("The wild card for coverage is: {}".format(pid), flush=True)
+                logging.info("The wild card for coverage is: {}".format(pid))
 
                 LTE = get_path.pathFinder(env_0=LTE_env)
                 LTE.get_file_path_with_wildcard_from_gdb()

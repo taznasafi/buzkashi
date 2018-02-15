@@ -54,12 +54,12 @@ class Tools:
         for state in state_list:
             print("\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
-            print("\n\n\t\t\t\t\tState fips: {}".format(state))
+
 
             LTE5CoverageList = get_path.pathFinder.query_provider_by_FIPS(path.join(path_links.input_bdb_base,
                                                                                        path_links.LTE5_table_path),
                                                                           str(int(state)))
-
+            print("\n\n\t\t\t\t\tState fips: {}".format(state))
 
             for pid in LTE5CoverageList:
 
@@ -68,7 +68,6 @@ class Tools:
                 logging.info("The wild card for coverage is: {}".format(LTE_coverage_wildcard))
 
                 LTE = get_path.pathFinder(env_0=LTE_env)
-                LTE.get_file_path_with_wildcard_from_gdb()
                 LTE_list =  LTE.get_file_path_with_wildcard_from_gdb(LTE_coverage_wildcard)
 
 

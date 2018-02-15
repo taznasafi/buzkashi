@@ -9,6 +9,10 @@ input_csv_base = r"/process/mfii/murtaza/MFII/Creating_subsidy_area/input/CSV"
 
 input_bdb_base = r"/process/mfii/murtaza/MFII/Creating_subsidy_area/input/GDBs"
 
+ineligible_gdb = "_dissovled_ineligible_coverages.gdb"
+
+LTE_gdb = "split_LTE5_coverages.gdb"
+
 Fips_table_path = path.join(input_csv_base, "state FiPS.txt")
 LTE5_table_path = path.join(input_csv_base, "LTE5_number_of_providers_per_state.csv")
 

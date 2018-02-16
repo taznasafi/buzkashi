@@ -38,7 +38,11 @@ class pathFinder:
 
             arcpy.ClearEnvironment("workspace")
             print("I found {} many file(s)".format(len(fc_list_path)))
-            return fc_list_path
+
+            if list(fc) == 'NoneType':
+                raise Warning("Did not find path, check your wild card")
+            else:
+                return fc_list_path
 
     @classmethod
     # create a list of fips from the table.
